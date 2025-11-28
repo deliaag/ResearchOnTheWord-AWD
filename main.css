@@ -7,11 +7,11 @@
  * --color-light: Off-White/Smoke
 */
 :root {
-    --color-primary: #00798C; /* Deep Teal */
-    --color-secondary: #E0F0F0; /* NOU: O nuanță de albastru/mint mai deschisă, mai soft */
-    --color-accent: #3A8970; /* Soft Green */
-    --color-text: #2C3E50; /* Dark Navy */
-    --color-light: #F4F7F9; /* Off-White/Smoke */
+    --color-primary: #00798C;
+    --color-secondary: #E0F0F0; 
+    --color-accent: #3A8970; 
+    --color-text: #2C3E50; 
+    --color-light: #F4F7F9; 
     --color-shadow: rgba(0, 0, 0, 0.1);
     
     --font-serif: 'Playfair Display', Georgia, serif; 
@@ -48,7 +48,6 @@ a:hover, a:focus {
     outline-offset: 2px;
 }
 
-/* Header/Hero Section - Communication: Depth, Tranquility */
 .hero-section {
     background: linear-gradient(135deg, var(--color-primary), #00A6A6);
     color: var(--color-light);
@@ -61,7 +60,6 @@ a:hover, a:focus {
 .hero-section h1 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
-    /* NOU: Contrast îmbunătățit pentru titlu */
     color: white; 
 }
 
@@ -71,25 +69,22 @@ a:hover, a:focus {
     margin: 0 auto;
 }
 
-/* Wavy divider for visual appeal and softness */
 .header-wave {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100px; /* Adjust height for wave effect */
+    height: 100px; 
     background: var(--color-light);
     clip-path: ellipse(100% 100px at 50% 100%);
     z-index: 1;
 }
 
-/* --- Stiluri pentru Navigația Fixă (Sticky Header) --- */
 
 #main-nav {
     position: sticky;
     top: 0;
-    z-index: 50; /* Z-index ridicat pentru a sta deasupra conținutului */
-    /* Fundal Deep Teal */
+    z-index: 50; 
     background-color: var(--color-primary); 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
     text-align: center;
@@ -127,25 +122,16 @@ a:hover, a:focus {
     outline-offset: -2px;
 }
 
-/* Am eliminat stilurile pentru hamburger/sidebar. */
 .hidden-checkbox {
     display: none;
 }
-/* Anulează vechea navigație statică 
-nav {
-    display: none;
-}
-    */
 
 
 /* Main Content Layout */
 main {
     max-width: 1200px;
-    /* CORECȚIE: Scoaterea margin: -40px pentru a nu se suprapune peste meniu. */
     margin: 0 auto 2rem; 
     padding: 0 1.5rem;
-    /* CORECȚIE: Scoaterea z-index-ului înalt de pe main */
-    /* z-index: 2; */ 
     position: relative;
     background-color: white; 
     border-radius: 8px;
@@ -156,13 +142,11 @@ main {
 }
 
 .secondary-bg {
-    /* Folosește culoarea secundară rafinată */
     background-color: var(--color-secondary); 
     margin: 0 -1.5rem; 
     padding: 4rem 1.5rem;
 }
 
-/* Section Titles */
 .section-title {
     font-size: 2.2rem;
     border-bottom: 3px solid var(--color-accent);
@@ -175,13 +159,11 @@ main {
     color: var(--color-accent);
 }
 
-/* Card Styling - Consistent visual element for Empathy */
 .card, .type-card, .context-card, .perspective-card {
     background-color: white;
     border-radius: 10px; /* Margini puțin mai rotunjite */
     padding: 2rem;
     margin-bottom: 1.5rem;
-    /* Umbră mai moale, mai subtilă */
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -191,7 +173,6 @@ main {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Formal Meaning Section */
 .definition-card {
     border-left: 5px solid var(--color-primary);
 }
@@ -204,7 +185,6 @@ blockquote {
     color: var(--color-text);
 }
 
-/* ACCESSIBILITY: Styling for blockquote footer/cite */
 blockquote footer {
     margin-top: 10px;
     font-size: 0.9rem;
@@ -228,9 +208,9 @@ blockquote footer {
     color: var(--color-accent);
 }
 
-.affective { border-bottom: 4px solid #F0A38D; /* Warm tone for feeling */ }
-.cognitive { border-bottom: 4px solid #00A6A6; /* Cool tone for thinking */ }
-.compassionate { border-bottom: 4px solid var(--color-accent); /* Main accent for action */ }
+.affective { border-bottom: 4px solid #F0A38D; }
+.cognitive { border-bottom: 4px solid #00A6A6; }
+.compassionate { border-bottom: 4px solid var(--color-accent); }
 
 
 /* Personal Narrative Section */
@@ -320,8 +300,6 @@ footer a {
 }
 
 
-/* --- Etymology Diagram Styling (Revised for Aesthetics and Clarity) --- */
-
 .etymology-diagram {
     display: flex;
     justify-content: center; 
@@ -366,17 +344,16 @@ footer a {
     color: var(--color-text);
 }
 
-/* Culori de fundal specifice pentru fiecare pas, pentru diferențiere vizuală */
 .etymology-step.greek {
-    background-color: #F8F2ED; /* Un bej deschis, antic */
+    background-color: #F8F2ED; 
     border-color: #A34A2E; 
 }
 .etymology-step.german {
-    background-color: #EBF3F5; /* Un gri-albăstrui deschis */
+    background-color: #EBF3F5; 
     border-color: #2D3A4B;
 }
 .etymology-step.english {
-    background-color: #EBF8F2; /* Un verde deschis, proaspăt */
+    background-color: #EBF8F2; 
     border-color: var(--color-accent);
 }
 
@@ -392,7 +369,6 @@ footer a {
     z-index: 5;
 }
 
-/* Hide the arrow on the last step */
 .etymology-step:last-child .fa-arrow-right {
     display: none;
 }
@@ -422,7 +398,7 @@ footer a {
     }
     
     .header-wave {
-        display: none; /* Hide complex wave on mobile for simplicity */
+        display: none;
     }
     
     main {
@@ -430,7 +406,6 @@ footer a {
         margin-top: 0;
     }
 
-    /* Responsive adjustments for the diagram */
     .etymology-diagram {
         flex-direction: column;
         align-items: center;
@@ -443,7 +418,6 @@ footer a {
     }
 
     .etymology-step .fa-arrow-right {
-        /* Schimb săgeata pentru vedere verticală */
         transform: translateX(-50%) rotate(90deg); 
         bottom: -35px; 
         top: auto;
@@ -452,14 +426,12 @@ footer a {
         font-size: 1.8rem; 
     }
     
-    /* Responsive adjustment for fixed nav links on medium screens */
     #main-nav li a {
         padding: 0.7rem 1rem;
         font-size: 0.9rem;
     }
 }
 
-/* Adjust font sizes for very small screens */
 @media (max-width: 600px) {
     .hero-section h1 {
         font-size: 2.2rem;
@@ -476,7 +448,6 @@ footer a {
         gap: 15px;
     }
     
-    /* Forțează link-urile să se alinieze pe două rânduri, dacă este necesar */
     #main-nav ul {
         justify-content: space-around;
         padding: 0.5rem 0;
