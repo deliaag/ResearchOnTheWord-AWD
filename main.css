@@ -459,3 +459,70 @@ footer a {
         text-transform: none;
     }
 }
+
+.empathy-visual {
+    margin: 3rem auto;
+    max-width: 800px;
+    text-align: center;
+    overflow: hidden; /* Important: previne "ieșirea" marginilor scalate din container */
+    border-radius: 12px;
+}
+
+.empathy-visual img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Efectul de blur */
+    filter: blur(4px); /* Ajustează valoarea (2px - 8px) în funcție de cât de mult vrei să ascunzi */
+    
+    /* Scalare pentru a elimina marginile albe/transparente create de blur */
+    transform: scale(1.05); 
+    
+    transition: filter 0.5s ease; /* Opțional: clarificare la hover */
+}
+
+/* Opțional: Imaginea devine clară când pui mouse-ul pe ea */
+.empathy-visual:hover img {
+    filter: blur(0);
+    transform: scale(1);
+}
+
+.empathy-visual figcaption {
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+    color: #555;
+    font-style: italic;
+}
+
+.video-section {
+    text-align: center;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 900px;
+    margin: 2rem auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.video-caption {
+    max-width: 700px;
+    margin: 1rem auto 0;
+    font-size: 0.95rem;
+    color: #555;
+    font-style: italic;
+}
+
