@@ -205,7 +205,8 @@ blockquote footer {
 
 .type-card h4 {
     margin-top: 0;
-    color: var(--color-accent);
+    color: var(--color-primary); /* Schimbă de la accent la primary */
+    font-weight: 700; /* Opțional: îngroașă puțin textul pentru lizibilitate */
 }
 
 .affective { border-bottom: 4px solid #F0A38D; }
