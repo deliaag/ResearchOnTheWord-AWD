@@ -205,8 +205,8 @@ blockquote footer {
 
 .type-card h4 {
     margin-top: 0;
-    color: var(--color-primary); /* Schimbă de la accent la primary */
-    font-weight: 700; /* Opțional: îngroașă puțin textul pentru lizibilitate */
+    color: var(--color-primary); 
+    font-weight: 700; 
 }
 
 .affective { border-bottom: 4px solid #F0A38D; }
@@ -465,7 +465,7 @@ footer a {
     margin: 3rem auto;
     max-width: 800px;
     text-align: center;
-    overflow: hidden; /* Important: previne "ieșirea" marginilor scalate din container */
+    overflow: hidden; /*: previne "ieșirea" marginilor scalate din container */
     border-radius: 12px;
 }
 
@@ -473,16 +473,15 @@ footer a {
     width: 100%;
     height: auto;
     display: block;
-    /* Efectul de blur */
-    filter: blur(4px); /* Ajustează valoarea (2px - 8px) în funcție de cât de mult vrei să ascunzi */
+    filter: blur(4px); 
     
     /* Scalare pentru a elimina marginile albe/transparente create de blur */
     transform: scale(1.05); 
     
-    transition: filter 0.5s ease; /* Opțional: clarificare la hover */
+    transition: filter 0.5s ease; /* clarificare la hover */
 }
 
-/* Opțional: Imaginea devine clară când pui mouse-ul pe ea */
+/* Imaginea devine clară când pui mouse-ul pe ea */
 .empathy-visual:hover img {
     filter: blur(0);
     transform: scale(1);
@@ -501,7 +500,7 @@ footer a {
 
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%; 
     height: 0;
     overflow: hidden;
     max-width: 900px;
